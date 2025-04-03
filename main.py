@@ -8,8 +8,8 @@ def find_derivative(expr_str, var_str):
     return der
 
 def main():
-    expr_str = input("Введите выражение: ").strip()
-    var_str = input("Введите переменную: ").strip()
+    expr_str = input("Введите выражение: ").strip().lower()
+    var_str = input("Введите переменную: ").strip().lower()
 
     try:
         print(f"Производная выражения {expr_str} по переменной {var_str} равна: \n{find_derivative(expr_str, var_str)}")
